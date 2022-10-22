@@ -11,9 +11,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: ${{ secrets.SERVER_FTP }}
-          server-dir: ./
-          username: ${{ secrets.USERNAME_FTP }}
-          password: ${{ secrets.PASSWORD_FTP }}
+          server: ftp.kesiniku.com
+          username: admin@uinamfind.com
+          password: uinamfind123
           # protocol: ftps
           # port: 21
