@@ -9,10 +9,10 @@ jobs:
       - name: Get Latest code
         uses: actions/checkout@v2
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ${{ secrets.SERVER_FTP }}
           username: ${{ secrets.USERNAME_FTP }}
           password: ${{ secrets.PASSWORD_FTP }}
-          protocol: ftps
-          port: 21
+          # protocol: ftps
+          # port: 21
