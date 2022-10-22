@@ -2,6 +2,7 @@
 date_default_timezone_set("Asia/Makassar");
 session_start();
 $conn = mysqli_connect("localhost", "root", "", "uinamfind_db");
+// $conn = mysqli_connect("156.67.212.126", "u3737783_uinamfind", "uinamfind", "u3737783_uinamfind_db");
 ?>
 
 <?php
