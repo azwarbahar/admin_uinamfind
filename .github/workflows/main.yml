@@ -11,7 +11,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: ftp.kesiniku.com
+          server: ftp.uinamfind.com
           username: admin@uinamfind.com
           password: uinamfind123
           # protocol: ftps
