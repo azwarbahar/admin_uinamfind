@@ -4,7 +4,7 @@ require('../koneksi.php');
 
 
 if (!isset($_SESSION['login_super'])) {
-    header("location: login.php");
+    header("location: ../login.php");
 }
 
 $get_id_session = $_SESSION['get_id'];
