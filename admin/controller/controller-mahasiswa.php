@@ -30,6 +30,14 @@ if (isset($_POST['submit_tambah_mahasiswa'])) {
                                             '$password', '$fakultas', '$jurusan', '$tahun_masuk', '$status_kemahasiswaan');";
     mysqli_query($conn, $query);
     if (mysqli_affected_rows($conn) > 0) {
+
+        $id = mysqli_insert_id($conn);
+        $motto_profesional = "Mahasiswa di UIN Alauddin Makassar";
+
+        // TAMBAH DATA
+        $query = "INSERT INTO `tb_motto_user` (`motto_profesional`, `user_id`)
+                                                VALUES ('$motto_profesional', '$id');";
+
         plugins(); ?>
         <script>
             $(document).ready(function() {
