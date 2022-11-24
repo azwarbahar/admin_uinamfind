@@ -38,7 +38,7 @@ $recruiter = mysqli_query($conn, "SELECT * FROM tb_recruiter ORDER BY id DESC");
                             styling to display buttons on a page that will interact with a DataTable. The core
                             library provides the based framework upon which plug-ins can built.
                         </p> -->
-                        <a href="#" class="btn btn-default btn-rounded waves-effect waves-light m-b-30">Tambah</a>
+                        <!-- <a href="#" class="btn btn-default btn-rounded waves-effect waves-light m-b-30">Tambah</a> -->
 
                         <table id="datatable-buttons" class="table table-striped table-bordered">
                             <thead>

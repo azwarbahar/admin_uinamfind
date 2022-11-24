@@ -21,13 +21,14 @@ if (isset($_POST['submit_tambah_mahasiswa'])) {
     $fakultas = $_POST['fakultas'];
     $jurusan = $_POST['jurusan'];
     $tahun_masuk = $_POST['tahun_masuk'];
+    $foto = "photo_default.png";
     $status_kemahasiswaan = $_POST['status_kemahasiswaan'];
 
     // TAMBAH DATA
     $query = "INSERT INTO `tb_user` (`nama_depan`, `nama_belakang`, `nim`, `username`, `email_uinam`,
-                                            `password`, `fakultas`, `jurusan`, `tahun_masuk`, `status_kemahasiswaan`)
+                                            `password`, `fakultas`, `jurusan`, `tahun_masuk`, `foto`, `status_kemahasiswaan`)
                                             VALUES ('$nama_depan', '$nama_belakang', '$nim', '$username', '$email_uinam', 
-                                            '$password', '$fakultas', '$jurusan', '$tahun_masuk', '$status_kemahasiswaan');";
+                                            '$password', '$fakultas', '$jurusan', '$tahun_masuk', '$foto', '$status_kemahasiswaan');";
     mysqli_query($conn, $query);
     if (mysqli_affected_rows($conn) > 0) {
 
