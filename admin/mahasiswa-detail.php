@@ -226,7 +226,7 @@ $dta = mysqli_fetch_assoc($result);
                             <?php
                             foreach ($get_mahasiswa_limit as $dta_get_mahasiswa_limit) {
                             ?>
-                                <a href="mahasiswa.php?id=<?= $dta_get_mahasiswa_limit['id'] ?>" data-toggle="tooltip" data-placement="top" title="" data-original-title="<?= $dta_get_mahasiswa_limit['nama_depan'] . ' ' . $dta_get_mahasiswa_limit['nama_belakang'] ?>">
+                                <a href="mahasiswa-detail.php?id=<?= $dta_get_mahasiswa_limit['id'] ?>" data-toggle="tooltip" data-placement="top" title="" data-original-title="<?= $dta_get_mahasiswa_limit['nama_depan'] . ' ' . $dta_get_mahasiswa_limit['nama_belakang'] ?>">
                                     <img src="https://api.uinamfind.com/upload/photo/<?= $dta_get_mahasiswa_limit['foto'] ?>" class="img-circle thumb-md" alt="friend">
                                 </a>
 
