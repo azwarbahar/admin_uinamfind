@@ -222,8 +222,8 @@ require_once '../template/header.php';
 
                                     <div class="card-box">
                                         <div class="contact-card">
-                                            <a class="pull-left" href="#">
-                                                <img class="img-circle" src="../assets/images/users/avatar-6.jpg" alt="">
+                                            <a class="pull-left" target="_blank" href="https://api.uinamfind.com/upload/photo/<?= $dta_mahasiswa['foto'] ?>">
+                                                <img class="img-circle" src="https://api.uinamfind.com/upload/photo/<?= $dta_mahasiswa['foto'] ?>" alt="">
                                             </a>
 
                                             <div class="member-info">

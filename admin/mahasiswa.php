@@ -163,7 +163,7 @@ $mahasiswa = mysqli_query($conn, "SELECT * FROM tb_user ORDER BY id DESC");
 
                                     <tr>
                                         <td style="text-align: center;">
-                                            <img src="../assets/images/small/img4.jpg" alt="image" class="img-circle  thumb-sm ">
+                                            <img src="https://api.uinamfind.com/upload/photo/<?= $dta['foto'] ?>" alt="image" class="img-circle  thumb-sm ">
                                         </td>
                                         <td><?= $dta['nim'] ?></td>
                                         <td><?= $dta['nama_depan'] . ' ' . $dta['nama_belakang'] ?></td>

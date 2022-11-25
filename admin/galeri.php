@@ -60,6 +60,11 @@ $foto = mysqli_query($conn, "SELECT * FROM tb_foto");
                                     <a href="../assets/images/informasi/<?= $dta['nama_foto'] ?>" class="image-popup" title="<?= $dta['judul'] ?>">
                                         <img src="../assets/images/informasi/<?= $dta['nama_foto'] ?>" class="thumb-img" alt="work-thumbnail">
                                     </a>
+                                <?php } else if ($dta['kategori'] == "Mahasiswa") {
+                                ?>
+                                    <a href="https://api.uinamfind.com/upload/photo/<?= $dta['nama_foto'] ?>" class="image-popup" title="<?= $dta['judul'] ?>">
+                                        <img src="https://api.uinamfind.com/upload/photo/<?= $dta['nama_foto'] ?>" class="thumb-img" alt="work-thumbnail">
+                                    </a>
                                 <?php } else {
                                 ?>
                                     <a href="../assets/images/gallery/12.jpg" class="image-popup" title="<?= $dta['judul'] ?>">

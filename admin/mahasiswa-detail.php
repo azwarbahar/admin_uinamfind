@@ -82,7 +82,7 @@ $dta = mysqli_fetch_assoc($result);
                 <div class="col-md-4 col-lg-3">
                     <div class="profile-detail card-box">
                         <div>
-                            <img src="../assets/images/users/avatar-2.jpg" class="img-circle" alt="profile-image">
+                            <img src="https://api.uinamfind.com/upload/photo/<?= $dta['foto'] ?>" class="img-circle" alt="profile-image">
 
                             <!-- <ul class="list-inline status-list m-t-20">
                                 <li>
@@ -227,7 +227,7 @@ $dta = mysqli_fetch_assoc($result);
                             foreach ($get_mahasiswa_limit as $dta_get_mahasiswa_limit) {
                             ?>
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="<?= $dta_get_mahasiswa_limit['nama_depan'] . ' ' . $dta_get_mahasiswa_limit['nama_belakang'] ?>">
-                                    <img src="../assets/images/users/avatar-1.jpg" class="img-circle thumb-md" alt="friend">
+                                    <img src="https://api.uinamfind.com/upload/photo/<?= $dta_get_mahasiswa_limit['foto'] ?>" class="img-circle thumb-md" alt="friend">
                                 </a>
 
                             <?php
