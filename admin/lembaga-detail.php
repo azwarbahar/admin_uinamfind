@@ -233,8 +233,8 @@ $dta = mysqli_fetch_assoc($result);
                                     foreach ($get_foto as $dta_get_foto) {
                                     ?>
                                         <!-- loop this -->
-                                        <div class="item"> <a href="https://api.uinamfind.com/upload/photo/<?= $dta['nama_foto'] ?>" target="_blank">
-                                                <img src="https://api.uinamfind.com/upload/photo/<?= $dta['nama_foto'] ?>" />
+                                        <div class="item"> <a href="https://api.uinamfind.com/upload/photo/<?= $dta_get_foto['nama_foto'] ?>" target="_blank">
+                                                <img src="https://api.uinamfind.com/upload/photo/<?= $dta_get_foto['nama_foto'] ?>" />
                                             </a>
                                         </div>
 
@@ -275,7 +275,7 @@ $dta = mysqli_fetch_assoc($result);
                                         <div class="col-lg-6">
                                             <div class="blog-box-one">
                                                 <div class="cover-wrapper">
-                                                    <a href="#"><img alt="Blog-img" src="https://api.uinamfind.com/upload/photo/<?= $dta['nama_foto'] ?>" class="img-responsive" /></a>
+                                                    <a href="#"><img alt="Blog-img" src="https://api.uinamfind.com/upload/photo/<?= $dta_get_kegiatan['nama_foto'] ?>" class="img-responsive" /></a>
                                                 </div>
                                                 <div class="post-info">
 
