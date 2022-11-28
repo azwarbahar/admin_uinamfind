@@ -36,9 +36,9 @@ if (isset($_POST['submit_tambah_mahasiswa'])) {
         $motto_profesional = "Mahasiswa di UIN Alauddin Makassar";
 
         // TAMBAH DATA
-        $query = "INSERT INTO `tb_motto_user` (`motto_profesional`, `user_id`)
+        $query_motto = "INSERT INTO `tb_motto_user` (`motto_profesional`, `user_id`)
                                                 VALUES ('$motto_profesional', '$id');";
-
+        mysqli_query($conn, $query_motto);
         plugins(); ?>
         <script>
             $(document).ready(function() {
