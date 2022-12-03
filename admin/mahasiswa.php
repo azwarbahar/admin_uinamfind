@@ -1,7 +1,7 @@
 <?php
 require_once '../template/header.php';
 
-$mahasiswa = mysqli_query($conn, "SELECT * FROM tb_user_new WHERE status_akun = 'Active' ORDER BY id DESC");
+$mahasiswa = mysqli_query($conn, "SELECT * FROM tb_user WHERE status_akun = 'Active' ORDER BY id DESC");
 
 ?>
 
