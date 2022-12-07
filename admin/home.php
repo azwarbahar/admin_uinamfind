@@ -225,7 +225,7 @@ require_once '../template/header.php';
                                                 <p class="text-muted">Batas Akhir : <?= $dta_beasiswa['batas_tanggal'] ?></p>
 
                                                 <?php
-                                                $status = $dta_produk['status'];
+                                                $status = $dta_beasiswa['status'];
                                                 if ($status == "Active") {
                                                     echo "<span class='label label-default'> Aktif </span>";
                                                 } else {
