@@ -271,7 +271,7 @@ $dta = mysqli_fetch_assoc($result);
                                         <div class="card-box m-b-10">
                                             <div class="table-box opport-box">
                                                 <div class="table-detail">
-                                                    <img src="../assets/images/brand/img_pengalaman.png" alt="img" class="img-circle thumb-lg m-r-15" />
+                                                    <img src="../assets/images/brand/img_pengalaman_new.png" alt="img" class="img-circle thumb-lg m-r-15" />
                                                 </div>
 
                                                 <div class="table-detail">
@@ -324,7 +324,7 @@ $dta = mysqli_fetch_assoc($result);
                                         <div class="card-box m-b-10">
                                             <div class="table-box opport-box">
                                                 <div class="table-detail">
-                                                    <img src="../assets/images/brand/img_organisasi.png" alt="img" class="img-circle thumb-lg m-r-15" />
+                                                    <img src="../assets/images/brand/img_organisasi_new.png" alt="img" class="img-circle thumb-lg m-r-15" />
                                                 </div>
 
                                                 <div class="table-detail">
@@ -422,7 +422,7 @@ $dta = mysqli_fetch_assoc($result);
                                         <div class="card-box m-b-10">
                                             <div class="table-box opport-box">
                                                 <div class="table-detail">
-                                                    <img src="../assets/images/brand/img_pendidikan.png" alt="img" class="img-circle thumb-lg m-r-15" />
+                                                    <img src="../assets/images/brand/img_pendidikan_new.png" alt="img" class="img-circle thumb-lg m-r-15" />
                                                 </div>
 
                                                 <div class="table-detail">
