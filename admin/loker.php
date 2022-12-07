@@ -67,7 +67,7 @@ if (isset($_GET['selected_id'])) {
                         <a href="#">
                             <div class="media">
                                 <div class="media-left">
-                                    <a href="#"> <img class="media-object img-circle" alt="64x64" src="../assets/images/users/avatar-1.jpg" style="width: 64px; height: 64px;"> </a>
+                                    <a href="#"> <img class="media-object img-circle" alt="<?= $dta_perusahaan['nama'] ?>" src="https://api.uinamfind.com/upload/perusahaan/<?= $dta_perusahaan['foto'] ?>" style="width: 64px; height: 64px;"> </a>
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading"> <a href="loker.php?selected_id=<?= $dta['id'] ?>"><?= $dta['posisi'] ?></a></h4>

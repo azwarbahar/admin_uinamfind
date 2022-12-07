@@ -58,7 +58,7 @@ $recruiter = mysqli_query($conn, "SELECT * FROM tb_recruiter ORDER BY id DESC");
                                 foreach ($recruiter as $dta) { ?>
                                     <tr>
                                         <td style="text-align: center;">
-                                            <img src="../assets/images/small/img4.jpg" alt="image" class="img-circle  thumb-sm ">
+                                            <img src="https://api.uinamfind.com//upload/photo/<?= $dta['foto'] ?>" alt="<?= $dta['nama'] ?>" class="img-circle  thumb-sm ">
                                         </td>
                                         <td><?= $dta['nama'] ?></td>
                                         <td><a href="perusahaan-detail.php?id=<?= $dta['id_perusahaan'] ?>"> <?= $dta['nama_perusahaan'] ?></a></td>

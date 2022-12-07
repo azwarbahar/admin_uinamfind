@@ -64,7 +64,7 @@ $loker = mysqli_query($conn, "SELECT * FROM tb_lowongan_pekerjaan WHERE recruite
                     <div class="card-box">
                         <div class="contact-card">
                             <a class="pull-left" href="#">
-                                <img class="img-circle" src="../assets/images/users/avatar-6.jpg" alt="">
+                                <img class="img-circle" src="https://api.uinamfind.com//upload/photo/<?= $dta['foto'] ?>" alt="<?= $dta['nama'] ?>">
                             </a>
                             <div class="member-info" style="padding-bottom: 0px" ;>
                                 <h4 class="m-t-0 m-b-5 header-title"><b><?= $dta['nama'] ?></b></h4>
@@ -145,7 +145,7 @@ $loker = mysqli_query($conn, "SELECT * FROM tb_lowongan_pekerjaan WHERE recruite
                                                 <td><?= $dta_loker['created_at'] ?></td>
                                                 <td><?= $dta_loker['gaji_min'] ?> - <?= $dta_loker['gaji_max'] ?></td>
                                                 <td style="text-align: center;">
-                                                    <a href="loker-detail.php?id=<?= $dta_loker['id'] ?>" class="btn table-action-btn waves-effect waves-light"><i class="md md-visibility"></i></a>
+                                                    <a href="loker.php?id=<?= $dta_loker['id'] ?>" class="btn table-action-btn waves-effect waves-light"><i class="md md-visibility"></i></a>
                                                 </td>
                                             </tr>
 

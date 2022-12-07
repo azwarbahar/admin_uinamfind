@@ -184,7 +184,7 @@ $lembaga = mysqli_query($conn, "SELECT * FROM tb_lembaga_kampus ");
                                 foreach ($lembaga as $dta) { ?>
                                     <tr>
                                         <td style="text-align: center;">
-                                            <img src="../assets/images/small/img4.jpg" alt="image" class="img-circle  thumb-sm ">
+                                            <img src="https://api.uinamfind.com//upload/photo/<?= $dta['foto'] ?>" alt="<?= $dta['nama'] ?>" class="img-circle  thumb-sm ">
                                         </td>
                                         <td><?= $dta['nama'] ?></td>
                                         <td><?= $dta['fakultas'] ?></td>

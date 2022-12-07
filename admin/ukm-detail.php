@@ -64,7 +64,7 @@ $dta = mysqli_fetch_assoc($result);
                     <div class="card-box">
                         <div class="contact-card">
                             <a class="pull-left" href="#">
-                                <img class="img-circle thumb-md" src="../assets/images/users/avatar-6.jpg" alt="">
+                                <img class="img-circle thumb-md" src="https://api.uinamfind.com/upload/photo/<?= $dta['foto'] ?>" alt="<?= $dta['nama_ukm'] ?>">
                             </a>
                             <div class="member-info" style="padding-bottom: 0px" ;>
                                 <h4 class="m-t-0 m-b-5 header-title"><b><?= $dta['nama_ukm'] ?></b></h4>
@@ -216,10 +216,11 @@ $dta = mysqli_fetch_assoc($result);
                                     foreach ($get_foto as $dta_get_foto) {
                                     ?>
                                         <!-- loop this -->
-                                        <div class="item"> <a href="../assets/images/gallery/1.jpg" target="_blank">
-                                                <img src="../assets/images/gallery/1.jpg" />
+                                        <div class="item"> <a href="https://api.uinamfind.com/upload/photo/<?= $dta_get_foto['nama_foto'] ?>" target="_blank">
+                                                <img src="https://api.uinamfind.com/upload/photo/<?= $dta_get_foto['nama_foto'] ?>" />
                                             </a>
                                         </div>
+
 
                                     <?php
                                     }
@@ -258,7 +259,7 @@ $dta = mysqli_fetch_assoc($result);
                                         <div class="col-lg-6">
                                             <div class="blog-box-one">
                                                 <div class="cover-wrapper">
-                                                    <a href="#"><img alt="Blog-img" src="../assets/images/blogs/5.jpg" class="img-responsive" /></a>
+                                                    <a href="https://api.uinamfind.com/upload/photo/<?= $dta_get_kegiatan['foto'] ?>"><img alt="Blog-img" src="https://api.uinamfind.com/upload/photo/<?= $dta_get_kegiatan['foto'] ?>" class="img-responsive" /></a>
                                                 </div>
                                                 <div class="post-info">
 

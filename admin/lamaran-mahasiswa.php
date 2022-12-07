@@ -81,7 +81,7 @@ $lamaran = mysqli_query($conn, "SELECT * FROM tb_lamaran ORDER BY id DESC");
                                     <tr>
                                         <td> <a href="mahasiswa-detail.php?id=<?= $dta_mahasiswa['id'] ?>"><?= $dta_mahasiswa['nama_depan'] ?> <?= $dta_mahasiswa['nama_belakang'] ?></a></td>
                                         <td><?= $dta_mahasiswa['jurusan'] ?></td>
-                                        <td><?= $dta['tanggal'] ?></td>
+                                        <td><?= $dta['created_at'] ?></td>
                                         <td><?= $dta['email_pelamar'] ?></td>
                                         <td><a href="loker.php?selected_id=<?= $dta['loker_id'] ?>"> <?= $dta_lowongan['posisi'] ?></td>
                                         <?php

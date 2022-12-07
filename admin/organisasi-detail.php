@@ -64,7 +64,7 @@ $dta = mysqli_fetch_assoc($result);
                     <div class="card-box">
                         <div class="contact-card">
                             <a class="pull-left" href="#">
-                                <img class="img-circle thumb-md" src="../assets/images/users/avatar-6.jpg" alt="">
+                                <img class="img-circle thumb-md" src="https://api.uinamfind.com/upload/photo/<?= $dta['foto'] ?>" alt="<?= $dta['nama_organisasi'] ?>">
                             </a>
                             <div class="member-info" style="padding-bottom: 0px" ;>
                                 <h4 class="m-t-0 m-b-5 header-title"><b><?= $dta['nama_organisasi'] ?></b></h4>
