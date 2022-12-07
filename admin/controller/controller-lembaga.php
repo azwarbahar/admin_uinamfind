@@ -23,12 +23,13 @@ if (isset($_POST['submit_tambah_lembaga'])) {
         $deskripsi = "Ini adalah akun official resmi " . $nama;
     }
     $admin = $_POST['admin'];
+    $foto = "lembaga_default.png";
 
     // TAMBAH DATA
     $query = "INSERT INTO `tb_lembaga_kampus` (`nama`, `cakupan_lembaga`, `fakultas`, `jurusan`, `deskripsi`,
-                                            `admin`, `status`)
+                                            `admin`, `foto`, `status`)
                                             VALUES ('$nama', '$cakupan', '$fakultas', '$jurusan', '$deskripsi', 
-                                            '$admin', '$status');";
+                                            '$admin', '$foto', '$status');";
     mysqli_query($conn, $query);
     if (mysqli_affected_rows($conn) > 0) {
         plugins(); ?>

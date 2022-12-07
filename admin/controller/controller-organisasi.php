@@ -20,10 +20,11 @@ if (isset($_POST['submit_tambah_organisasi'])) {
         $deskripsi = "Ini adalah akun official resmi " . $nama;
     }
     $admin = $_POST['admin'];
+    $foto = "lembaga_default.png";
 
     // TAMBAH DATA
-    $query = "INSERT INTO `tb_organisasi` (`nama_organisasi`, `kategori`, `deskripsi`, `admin`, `status`)
-                                            VALUES ('$nama', '$kategori', '$deskripsi', '$admin', '$status');";
+    $query = "INSERT INTO `tb_organisasi` (`nama_organisasi`, `kategori`, `foto`, `deskripsi`, `admin`,  `status`)
+                                            VALUES ('$nama', '$kategori', '$foto', '$deskripsi', '$admin', '$status');";
     mysqli_query($conn, $query);
     if (mysqli_affected_rows($conn) > 0) {
         plugins(); ?>

@@ -21,11 +21,12 @@ if (isset($_POST['submit_tambah_ukm'])) {
     }
     $admin = $_POST['admin'];
     $status_konfirmasi = "Yes";
+    $foto = "lembaga_default.png";
 
     // TAMBAH DATA
-    $query = "INSERT INTO `tb_ukm` (`nama_ukm`, `kategori`, `deskripsi`, `status_konfirmasi`, `admin`, `status`)
+    $query = "INSERT INTO `tb_ukm` (`nama_ukm`, `kategori`, `deskripsi`, `status_konfirmasi`, `admin`, `foto`, `status`)
                                             VALUES ('$nama', '$kategori', '$deskripsi', '$status_konfirmasi', 
-                                            '$admin', '$status');";
+                                            '$admin', '$foto', '$status');";
     mysqli_query($conn, $query);
     if (mysqli_affected_rows($conn) > 0) {
         plugins(); ?>
