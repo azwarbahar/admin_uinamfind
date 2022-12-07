@@ -131,63 +131,6 @@ require_once '../template/header.php';
                         </div>
                     </div>
 
-                    <div class="portlet">
-                        <div class="portlet-heading portlet-default">
-                            <h3 class="portlet-title text-dark">
-                                UINAM Market
-                            </h3>
-                            <div class="portlet-widgets">
-                                <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
-                                <span class="divider"></span>
-                                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-market"><i class="ion-minus-round"></i></a>
-                                <span class="divider"></span>
-                                <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <div id="bg-market" class="panel-collapse collapse in">
-                            <div class="portlet-body">
-
-                                <a href="market-produk.php" class="btn btn-default btn-sm waves-effect waves-light">View All</a>
-
-                                <div class="table-responsive">
-                                    <table class="table table-actions-bar">
-                                        <thead>
-                                            <tr>
-                                                <th>Produk</th>
-                                                <th>Nama</th>
-                                                <th>Harga</th>
-                                                <th>Lokasi</th>
-                                                <th style="min-width: 80px;">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <?php
-                                            $produk = mysqli_query($conn, "SELECT * FROM tb_market_produk ORDER BY id DESC LIMIT 5");
-                                            foreach ($produk as $dta_produk) {
-                                                $nomor = 1;
-                                            ?>
-                                                <tr>
-                                                    <td><img src="../assets/images/products/iphone.jpg" class="thumb-sm" alt=""> </td>
-                                                    <td><?= $dta_produk['judul'] ?></td>
-                                                    <td>Rp. <?= $dta_produk['harga'] ?></td>
-                                                    <td><?= $dta_produk['lokasi'] ?></td>
-                                                    <td>
-                                                        <a href="market-produk-detail.php?id=<?= $dta_produk['id'] ?>" class="table-action-btn"><i class="md md-visibility"></i></a>
-                                                    </td>
-                                                </tr>
-                                            <?php
-                                                $nomor = $nomor + 1;
-                                            } ?>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -223,7 +166,7 @@ require_once '../template/header.php';
                                     <div class="card-box">
                                         <div class="contact-card">
                                             <a class="pull-left" target="_blank" href="https://api.uinamfind.com/upload/photo/<?= $dta_mahasiswa['foto'] ?>">
-                                                <img class="img-circle" src="https://api.uinamfind.com/upload/photo/<?= $dta_mahasiswa['foto'] ?>" alt="">
+                                                <img class="img-circle" src="https://api.uinamfind.com/upload/photo/<?= $dta_mahasiswa['foto'] ?>" alt="<?= $dta_mahasiswa['nama_depan'] ?> <?= $dta_mahasiswa['nama_belakang'] ?>">
                                             </a>
 
                                             <div class="member-info">
@@ -274,7 +217,7 @@ require_once '../template/header.php';
                                     <div class="card-box">
                                         <div class="contact-card">
                                             <a class="pull-left" href="#">
-                                                <img class="img-circle" src="../assets/images/users/avatar-6.jpg" alt="">
+                                                <img class="img-circle" src="https://admin.uinamfind.com/assets/images/beasiswa/<?= $dta_beasiswa['foto'] ?>" alt="<?= $dta_beasiswa['judul'] ?>">
                                             </a>
                                             <div class="member-info">
                                                 <h4 class="m-t-0 m-b-5 header-title"> <a href="beasiswa.php?selected_id=<?= $dta_beasiswa['id'] ?>"><b><?= $dta_beasiswa['judul'] ?></b></a> </h4>

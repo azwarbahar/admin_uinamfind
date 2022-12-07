@@ -214,9 +214,9 @@ $get_data_akun = mysqli_fetch_assoc($query_header_akun);
                             <a href="beasiswa.php" class="waves-effect"><i class="ti-money"></i> <span> Info Beasiswa </span></a>
                         </li>
 
-                        <li class="has_sub">
+                        <!-- <li class="has_sub">
                             <a href="market-produk.php" class="waves-effect"><i class="ti-shopping-cart"></i> <span> UINAMarket </span></a>
-                        </li>
+                        </li> -->
                         <!-- <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-shopping-cart"></i> <span> UINAMarket </span> <span class="menu-arrow"></span></a>
                             <ul class="list-unstyled">
