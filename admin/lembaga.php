@@ -134,7 +134,7 @@ $lembaga = mysqli_query($conn, "SELECT * FROM tb_lembaga_kampus ");
                                                     <select class="form-control select2" name="admin" id="admin" required>
                                                         <option value="">- Pilih -</option>
                                                         <?php
-                                                        $mahasiswa = mysqli_query($conn, "SELECT * FROM tb_user");
+                                                        $mahasiswa = mysqli_query($conn, "SELECT * FROM tb_user WHERE status_akun = 'Active'");
                                                         while ($row = mysqli_fetch_assoc($mahasiswa)) {
                                                             echo "<option value='$row[id]'>$row[nama_depan] $row[nama_belakang] - ($row[nim])</option>";
                                                         }
