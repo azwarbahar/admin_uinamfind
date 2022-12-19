@@ -249,9 +249,9 @@ $get_data_akun = mysqli_fetch_assoc($query_header_akun);
                             <a href="admin-super.php" class="waves-effect"><i class="ti-id-badge"></i> <span> Super Admin </span></a>
                         </li>
 
-                        <li class="has_sub">
+                        <!-- <li class="has_sub">
                             <a href="admin-jurusan.php" class="waves-effect"><i class="ti-id-badge"></i> <span> Admin Jurusan </span></a>
-                        </li>
+                        </li> -->
 
 
                         <li class="text-muted menu-title"></li>
